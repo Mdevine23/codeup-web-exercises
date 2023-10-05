@@ -49,19 +49,20 @@
 //  console.log(emptyString)
 
 //TEMPLATE STRINGS
-let userName = "Justino (Nova)";
-let guildName = "";
+// let userName = "Justino (Nova)";
+// let guildName = "";
+//
+// let nameLength = userName.length;
+// console.log(nameLength);
+// let guildNameStart = userName.indexOf("(");
+// let guildNameEnd = nameLength - 1;
+// guildName = userName.substring(guildNameStart + 1, guildNameEnd);
+// console.log(guildName);
+// let guildNameWithParenthesis =
+// console.log(userName);
+//
+// let channelMessage = "username from the guildName guild has logged in";
+// channelMessage = userName + " from the " + guildName + " guild has logged in";
+// chanelMessage = `${userName} from the ${guildName} guild has logged in.`;
+// console.log(chanelMessage);
 
-let nameLength = userName.length;
-console.log(nameLength);
-let guildNameStart = userName.indexOf("(");
-let guildNameEnd = nameLength - 1;
-guildName = userName.substring(guildNameStart + 1, guildNameEnd);
-console.log(guildName);
-let guildNameWithParenthesis =
-console.log(userName);
-
-let channelMessage = "username from the guildName guild has logged in";
-channelMessage = userName + " from the " + guildName + " guild has logged in";
-chanelMessage = `${userName} from the ${guildName} guild has logged in.`;
-console.log(chanelMessage);

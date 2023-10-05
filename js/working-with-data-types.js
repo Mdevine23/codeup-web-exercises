@@ -109,21 +109,21 @@
 //
 // console.log("You made", totalPayDollars);
 //
-let username = "codeup";
-let password = "notastrongpassword";
-// Remember to stay along one path true/false
-
-let passLengthNotGreaterThan5 = password.length <= 5;
-let passNotIncludingUser = password.toLowerCase().includes(username.toLowerCase());
-let userLengthSize = username.length >= 20;
-let hasWhiteSpace = password.includes(" ")
-let hasWhiteSpaceUser = username.includes(" ")
-
-console.log(passLengthNotGreaterThan5);
-console.log(passNotIncludingUser);
-console.log(userLengthSize);
-console.log(hasWhiteSpace);
-console.log(hasWhiteSpaceUser);
+// let username = "codeup";
+// let password = "notastrongpassword";
+// // Remember to stay along one path true/false
+//
+// let passLengthNotGreaterThan5 = password.length <= 5;
+// let passNotIncludingUser = password.toLowerCase().includes(username.toLowerCase());
+// let userLengthSize = username.length >= 20;
+// let hasWhiteSpace = password.includes(" ")
+// let hasWhiteSpaceUser = username.includes(" ")
+//
+// console.log(passLengthNotGreaterThan5);
+// console.log(passNotIncludingUser);
+// console.log(userLengthSize);
+// console.log(hasWhiteSpace);
+// console.log(hasWhiteSpaceUser);
 
 
 
