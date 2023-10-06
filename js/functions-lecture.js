@@ -39,30 +39,30 @@
 // const helloMessage = sayHello(myName);
 //
 // console.log(helloMessage);
-// console.log(helloMessage);
-//
+
 // const random = Math.floor((Math.random() * 3) + 1);
 // const isTwo = (a) => {
 //     return a === 2
 // }
 // const num = isTwo(random)
-//
-// const billPrompt = prompt(`What is the total amount of your bill?`);
-// const tipPrompt = prompt('How much would you like to tip?')
+// console.log(num)
+
+// const billPrompt = parseFloat(prompt(`What is the total amount of your bill?`));
+// const tipPrompt = parseFloat(prompt('What percentage would you like to tip?'));
 // const tip = (billPrompt * tipPrompt)/100
 // let totalCostDollars = tip.toLocaleString("en-US", {style:"currency", currency:"USD"})
 // alert(`Tip amount is ${totalCostDollars}`)
 //
-// const calculatorTip = (a, b) => {
-//     return (a * b)/100
+// const calculatorTip = (billTotal, tipPercentage) => {
+//     return billTotal * tipPercentage/100
 // }
 // const tipTotal = calculatorTip(`${billPrompt}`, `${tipPrompt}`)
 // console.log(tipTotal)
-
-let originalPrice = 45.99;
-let discountPercent = .12;
-const applyDiscount = (a, b) => {
-    return a - (a * b)
+//
+// let originalPrice = 45.99;
+// let discountPercent = .12;
+const applyDiscount = (price, discount) => {
+    return price - (price * discount)
 }
-const discount = applyDiscount(`${originalPrice}`, `${discountPercent}`)
+const discount = applyDiscount(45.99, .12)
 console.log(discount)
