@@ -61,8 +61,42 @@
 //
 // let originalPrice = 45.99;
 // let discountPercent = .12;
-const applyDiscount = (price, discount) => {
-    return price - (price * discount)
+// const applyDiscount = (price, discount) => {
+//     return price - (price * discount)
+// }
+// const discount = applyDiscount(45.99, .12)
+// console.log(discount)
+
+// EXTRA PRACTICE
+const celsiusToFahrenheit = (celsius) => {
+    return celsius * 9/5 + 32
 }
-const discount = applyDiscount(45.99, .12)
-console.log(discount)
+console.log(celsiusToFahrenheit(0));
+
+const average = (a, b, c) => {
+    return a + b + c
+}
+console.log(average(2,3,5));
+
+
+const firstChar = (str) => {
+    return str.charAt()
+}
+console.log(firstChar(`Hello`));
+
+const lastChar = (str) => {
+    return str.charAt(str.length-1)
+}
+console.log(lastChar('Goodbye'));
+
+const reverseString = (str) => {
+    return str.split("").reverse().join("");
+}
+// console.log(reverseString(`mark`))
+
+const isPalindrome = (str) => {
+    return `${str}` === reverseString(str)
+}
+let truePalindrome = isPalindrome(`oM`.toLowerCase());
+
+console.log(truePalindrome);
