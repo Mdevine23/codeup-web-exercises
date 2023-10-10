@@ -71,7 +71,7 @@
 const celsiusToFahrenheit = (celsius) => {
     return celsius * 9/5 + 32
 }
-console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(28));
 
 const average = (a, b, c) => {
     return a + b + c
@@ -97,6 +97,6 @@ const reverseString = (str) => {
 const isPalindrome = (str) => {
     return `${str}` === reverseString(str)
 }
-let truePalindrome = isPalindrome(`oM`.toLowerCase());
+let truePalindrome = isPalindrome(``.toLowerCase());
 
 console.log(truePalindrome);
