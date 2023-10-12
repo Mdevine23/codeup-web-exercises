@@ -1,7 +1,7 @@
 (function(){
     "use strict";
 
-    // var planets = [
+    // let planets = [
     //     'Mercury',
     //     'Venus',
     //     'Earth',
@@ -12,14 +12,16 @@
     //     'Neptune'
     // ];
     //
-    // /**
-    //  * TODO:
-    //  * Read each console log below, and write some javascript code to perform
-    //  * the step that it describes
-    //  */
+    // console.log("Planets before we start =>", planets);
+    //
+    // // /**
+    // //  * TODO:
+    // //  * Read each console log below, and write some javascript code to perform
+    // //  * the step that it describes
+    // //  */
     //
     // console.log('Adding "The Sun" to the beginning of the planets array.');
-    // planets.unshift('Sun');
+    // planets.unshift('The Sun');
     // console.log(planets);
     //
     // console.log('Adding "Pluto" to the end of the planets array.');
@@ -54,9 +56,9 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    // var planetsArray = planetsString.split("|");
-    // console.log(planetsArray);
+    let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    let planetsArray = planetsString.split("|");
+    console.log(planetsArray);
 
     /**
      * TODO:
@@ -69,17 +71,12 @@
      * string, and <li> tags around each planet.
      */
 
-    // const planetsString = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
-    // let planetArray = planetsString.split('<br>');
-    // planetArray.join(", ");
-    //
-    // console.log(planetArray);
+    const planetsBreak = planetsArray.join('<br>');
+    console.log(planetsBreak);
 
-    const planetsString = "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune";
-    const planetsArray = planetsString.split(',');
-
-    console.log(planetsArray);
-    console.log(planetsString);
-
+    let planetsHtml = planetsArray.join('</li><li>');
+    console.log(planetsHtml);
+    planetsHtml = `<ul><li>${planetsHtml}</li></ul>`;
+    console.log(planetsHtml);
 
 })();
