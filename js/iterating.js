@@ -6,7 +6,7 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-const names = ['John', 'Mary', 'Susan', 'Mike' ];
+const names = ['John', 'Mary', 'Susan', 'Mike'];
 
 
     /**
@@ -44,9 +44,11 @@ for (let i = 0; i < nmrOfNames; i++) {
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
+
     names.forEach((name) => {
         console.log(name);
-    })
+    });
+
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
