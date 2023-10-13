@@ -9,6 +9,23 @@ const discount = (totalAmount) => {
         return parseFloat(result);
 }
 
+const createBook = (title, firstName, lastName) => {
+    return {
+        title: title,
+        author: {
+            firstName: firstName,
+            lastName: lastName,
+        }
+    }
+}
+
+const showBookInfo = (book, books) => {
+    const {title, author} = book;
+    const index = books.indexOf(book);
+    console.log(`Book # ${index + 1} \nTitle: ${title} \nAuthor: ${author.firstName} ${author.lastName} `)
+}
+
+
 (function() {
 
 
@@ -23,9 +40,8 @@ const discount = (totalAmount) => {
         firstName: 'Mark',
         lastName: 'Devine',
         sayHello:  function () {
-            return `Hello from ${this.firstName}`;
+            return `Hello from ${this.firstName} ${this.lastName}`;
         }
-
     };
 
      // * Example:
@@ -59,19 +75,19 @@ const discount = (totalAmount) => {
      * and console.log the relevant messages for each person
      */
 
-    let shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-
-    shoppers.forEach((shoppers) => {
-    if (shoppers.amount > 200) {
-        console.log(`${shoppers.name}, had and original bill of ${shoppers.amount}, their discount is ${discount(shoppers.amount)}, he now owes ${appliedDiscount(shoppers.amount)}.`);
-    } else {
-        console.log(`${shoppers.name}, received no discount and owes ${shoppers.amount}.`);
-    }
-})
+//     let shoppers = [
+//         {name: 'Cameron', amount: 180},
+//         {name: 'Ryan', amount: 250},
+//         {name: 'George', amount: 320}
+//     ];
+//
+//     shoppers.forEach((shoppers) => {
+//     if (shoppers.amount > 200) {
+//         console.log(`${shoppers.name}, had and original bill of ${shoppers.amount}, their discount is ${discount(shoppers.amount)}, he now owes ${appliedDiscount(shoppers.amount)}.`);
+//     } else {
+//         console.log(`${shoppers.name}, received no discount and owes ${shoppers.amount}.`);
+//     }
+// })
 // console.log(shoppers);
 
      // TODO:
@@ -123,13 +139,17 @@ const discount = (totalAmount) => {
      *      ...
      */
 
-    for (let book of books) {
-        const {title, author} = book;
-        const index = books.indexOf(book);
-        console.log(`Book # ${index + 1} 
-        Title: ${title} 
-        Author: ${author.firstName} ${author.lastName} `)
-    }
+    // for (let book of books) {
+    //     const index = books.indexOf(book);
+    //     console.log(`Book # ${index + 1}`, createBook(`${book.title}`, `${book.author.firstName}`, `${book.author.lastName}`));
+    // }
+
+
+    // for (let book of books) {
+    //     const {title, author} = book;
+    //     const index = books.indexOf(book);
+    //     console.log(`Book # ${index + 1} \nTitle: ${title} \nAuthor: ${author.firstName} ${author.lastName} `)
+    // }
 
 
 
