@@ -62,7 +62,7 @@ const showBookInfo = (book, books) => {
 
 
     /** TODO:
-     * HEB has an offer for the shoppers that buy products amounting to
+     * HEB has an offer for the shopper that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
      * discount. Write a JS program, using conditionals, that logs to the
      * browser, how much Ryan, Cameron and George need to pay. We know that
@@ -75,20 +75,20 @@ const showBookInfo = (book, books) => {
      * and console.log the relevant messages for each person
      */
 
-//     let shoppers = [
-//         {name: 'Cameron', amount: 180},
-//         {name: 'Ryan', amount: 250},
-//         {name: 'George', amount: 320}
-//     ];
+    let shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
 //
-//     shoppers.forEach((shoppers) => {
-//     if (shoppers.amount > 200) {
-//         console.log(`${shoppers.name}, had and original bill of ${shoppers.amount}, their discount is ${discount(shoppers.amount)}, he now owes ${appliedDiscount(shoppers.amount)}.`);
-//     } else {
-//         console.log(`${shoppers.name}, received no discount and owes ${shoppers.amount}.`);
-//     }
-// })
-// console.log(shoppers);
+    shoppers.forEach((shopper) => {
+    if (shopper.amount > 200) {
+        console.log(`${shopper.name}, had and original bill of ${shopper.amount}, their discount is ${discount(shopper.amount)}, he now owes ${appliedDiscount(shopper.amount)}.`);
+    } else {
+        console.log(`${shopper.name}, received no discount and owes ${shopper.amount}.`);
+    }
+})
+// console.log(shopper);
 
      // TODO:
      // * Create an array of objects that represent books and store it in a
@@ -166,4 +166,6 @@ const showBookInfo = (book, books) => {
      */
 
 })();
+
+
 
