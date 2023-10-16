@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register With Us</title>
+</head>
+<body>
+<h1>Register</h1>
+    <form method="POST" action="https://request-inspector.glitch.me/">
+        <label for="username">
+            <span>Username</span>
+            <input type="text" name="username" placeholder="Username" required>
+        </label>
+        <br>
+        <label for="password">
+            <span>Password</span>
+            <input type="password" name="password" placeholder="Password">
+        </label>
+        <label>
+            <br>
+            <span>Fill out a short description about yourself.</span>
+            <br>
+            <textarea name="bio"></textarea>
+        </label>
+        <p>How did you hear about us?</p>
+        <label>
+            <input type="checkbox" name="advertisement" value="Billboard">
+            <span>Billboard</span>
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="advertisement" value="Radio Advertisement">
+            <span>Radio Advertisement</span>
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="advertisement" value="Internet Advertisement">
+            <span>Internet Advertisement</span>
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="advertisement" value="Other">
+            <span>Other</span>
+        </label>
+        <p>What web browser are you currently using?</p>
+        <label>
+            <select name="web_browser">
+                <option value="google_chrome">Google Chrome</option>
+                <option value="safari">Safari</option>
+                <option value="internet_explorer">Internet Explorer</option>
+                <option value="mozilla">Mozilla</option>
+            </select>
+        </label>
+        <br>
+        <button>Go</button>
+    </form>
+</body>
+
+</html>
