@@ -6,9 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register With Us</title>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<h1>Register With Us</h1>
+<h1 class="fancy-header">Register With Us</h1>
 <form method="POST" action="https://request-inspector.glitch.me/">
         <label for="email">
             <span>Email</span>
@@ -20,15 +21,15 @@
             <input type="password" name="password" placeholder="Password" id="password" required>
         </label>
         <br>
-        <label>
+        <label for="bio">
             <br>
             <span>Fill out a short description about yourself.</span>
             <br>
             <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
         </label>
     <section>
-        <h2>How did you hear about us?</h2>
-        <label>
+        <h2 class="fancy-header">How did you hear about us?</h2>
+        <label for="bio">
             <input type="checkbox" name="advertisement" value="Billboard">
             <span>Billboard</span>
         </label>
@@ -49,7 +50,7 @@
         </label>
     </section>
     <section>
-        <h2>What web browser are you currently using?</h2>
+        <h2 class="fancy-header">What web browser are you currently using?</h2>
         <label>
             <select name="web_browser">
                 <option value="google_chrome">Google Chrome</option>
