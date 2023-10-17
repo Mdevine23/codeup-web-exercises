@@ -12,21 +12,22 @@
 <form method="POST" action="https://request-inspector.glitch.me/">
         <label for="email">
             <span>Email</span>
-            <input type="text" name="username" placeholder="Email" id="email">
+            <input type="email" name="username" placeholder="Email" id="email" required>
         </label>
         <br>
         <label for="password">
             <span>Password</span>
-            <input type="password" name="password" placeholder="Password" id="password">
+            <input type="password" name="password" placeholder="Password" id="password" required>
         </label>
         <br>
         <label>
             <br>
             <span>Fill out a short description about yourself.</span>
             <br>
-            <textarea name="bio"></textarea>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
         </label>
-        <p>How did you hear about us?</p>
+    <section>
+        <h2>How did you hear about us?</h2>
         <label>
             <input type="checkbox" name="advertisement" value="Billboard">
             <span>Billboard</span>
@@ -46,17 +47,20 @@
             <input type="checkbox" name="advertisement" value="Other">
             <span>Other</span>
         </label>
-        <p>What web browser are you currently using?</p>
+    </section>
+    <section>
+        <h2>What web browser are you currently using?</h2>
         <label>
             <select name="web_browser">
                 <option value="google_chrome">Google Chrome</option>
                 <option value="safari">Safari</option>
                 <option value="internet_explorer">Internet Explorer</option>
-                <option value="mozilla">Mozilla</option>
+                <option value="firefox">Firefox</option>
             </select>
         </label>
+    </section>
         <br>
-        <button>Go</button>
+        <button>Submit</button>
     </form>
 </body>
 </html>
