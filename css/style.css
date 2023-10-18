@@ -1,13 +1,49 @@
-h1 {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5px;
+    font-family: Papyrus, monospace;
+    background-color: #e5e5e5;
+}
+header {
+    text-decoration: underline;
     color: #3f51b5;
+    text-align: center;
 }
 h2 {
     color: #3f51b5;
 }
-p {
+header p {
     text-decoration: underline;
+    text-align: center;
 }
-body {
-    background-color: #eee;
-    font-family: Papyrus;
+ ul {
+    list-style: square;
 }
+ ol {
+     list-style: square;
+ }
+div.container {
+    min-height: 65dvh;
+    background-image: url("../img/pexels-christina-morillo-1181317.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table, th, td {
+    border: solid;
+    width: 40%;
+    text-align: center;
+}
+a:link {
+    color:red;
+}
+a:visited {
+    color:black;
+}
+a:hover {
+    color:blue;
+}
+a:active {
+    color:green;
+}
+
