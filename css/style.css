@@ -29,10 +29,17 @@ div.container {
     background-repeat: no-repeat;
     background-size: cover;
 }
-table, th, td {
+table, th {
     border: solid;
     width: 40%;
     text-align: center;
+}
+tr {
+    font-size: 1.2rem;
+}
+td {
+    padding: 10px 15px;
+    border: solid;
 }
 a:link {
     color:red;
@@ -47,3 +54,7 @@ a:active {
     color:green;
 }
 
+figure > img {
+    width:400px;
+    aspect-ratio: 2/1;
+}
