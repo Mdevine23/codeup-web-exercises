@@ -1,4 +1,5 @@
-// This is the way for an arrow function with two parameters!
+ // This is the way for an arrow function with two parameters!
+
 // const isCoding = (name, sport) => {
 //     return `${name} loves ${sport}.`
 // };
@@ -67,36 +68,36 @@
 // const discount = applyDiscount(45.99, .12)
 // console.log(discount)
 
-// EXTRA PRACTICE
-const celsiusToFahrenheit = (celsius) => {
-    return celsius * 9/5 + 32
-}
-console.log(celsiusToFahrenheit(28));
-
-const average = (a, b, c) => {
-    return a + b + c
-}
-console.log(average(2,3,5));
-
-
-const firstChar = (str) => {
-    return str.charAt()
-}
-console.log(firstChar(`Hello`));
-
-const lastChar = (str) => {
-    return str.charAt(str.length-1)
-}
-console.log(lastChar('Goodbye'));
-
-const reverseString = (str) => {
-    return str.split("").reverse().join("");
-}
+// // EXTRA PRACTICE
+// const celsiusToFahrenheit = (celsius) => {
+//     return celsius * 9/5 + 32
+// }
+// console.log(celsiusToFahrenheit(28));
+//
+// const average = (a, b, c) => {
+//     return a + b + c
+// }
+// console.log(average(2,3,5));
+//
+//
+// const firstChar = (str) => {
+//     return str.charAt()
+// }
+// console.log(firstChar(`Hello`));
+//
+// const lastChar = (str) => {
+//     return str.charAt(str.length-1)
+// }
+// console.log(lastChar('Goodbye'));
+//
+// const reverseString = (str) => {
+//     return str.split("").reverse().join("");
+// }
 // console.log(reverseString(`mark`))
 
 const isPalindrome = (str) => {
-    return `${str}` === reverseString(str)
+    let clnString = str.toLowerCase()
+    let reverseString = clnString.split("").reverse().join("")
+    return clnString === reverseString
 }
-let truePalindrome = isPalindrome(``.toLowerCase());
-
-console.log(truePalindrome);
+console.log(isPalindrome(`Bob`));
