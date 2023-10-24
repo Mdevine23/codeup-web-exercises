@@ -1,0 +1,34 @@
+#button {
+    background-color: #2f65f8;
+    font-weight: bold;
+    color: #e5e5e5;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+}
+input {
+    min-height: 45px;
+}
+.container.hero {
+    min-height: 80dvh;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+.greenlink {
+    text-decoration: underline;
+    color: #3da08f;
+}
+.larger {
+    font-size: 32px;
+}
+.backgroundgrey {
+    background-color: #f8f8fe;
+}
