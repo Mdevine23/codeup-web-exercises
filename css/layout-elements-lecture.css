@@ -32,3 +32,23 @@ h1, h2, h3, h4, h5, h6 {
 .backgroundgrey {
     background-color: #f8f8fe;
 }
+/*.green-arrow {*/
+/*    position: absolute;*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    top: -41px;*/
+/*    left: 145px;*/
+/*}*/
+
+@media screen and (max-width: 850px) {
+    .container.hero .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .container.hero .column:first-child {
+        order: 2;
+    }
+    .container.hero .column:last-child {
+        order: 1;
+    }
+}
