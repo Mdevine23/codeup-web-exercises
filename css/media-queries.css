@@ -1,3 +1,21 @@
+/*style sheet*/
+.link {
+    text-decoration: underline;
+    color: #2f65f8;
+    padding: 10px;
+    width: inherit;
+    font-weight: bold;
+}
+h1 {
+    font-size: 45px;
+}
+.copyright {
+    font-size: 14px;
+}
+* {
+    font-family: Roboto, serif;
+}
+
 @media screen and (max-width: 580px) {
     h1, h2 {
         align-items: start;
@@ -28,13 +46,15 @@
     }
     .hidden-on-desktop {
         text-align: center;
-        background-color: #33fff5;
+        background-color: #CBFFFF;
         border-style: double;
         padding: 15px;
         font-weight: bold;
     }
+    a {
+        padding: 16px 110px;
+    }
 }
-
 @media screen and (min-width: 581px) {
     .hidden-on-desktop {
         display: none;
@@ -44,19 +64,3 @@
     }
 }
 
-.link {
-    text-decoration: underline;
-    color: #2f65f8;
-    padding: 10px;
-    width: inherit;
-    font-weight: bold;
-}
-h1 {
-    font-size: 45px;
-}
-.copyright {
-    font-size: 14px;
-}
-* {
-    font-family: Roboto, serif;
-}
