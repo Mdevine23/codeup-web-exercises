@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
 <body>
 
@@ -24,11 +25,19 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-<button id="main-btn">Main Header</button>
-<button id="sub-btn">Sub Header</button>
-<button id="grey-btn">Grey Items</button>
-<button id="blue-btn">Blue Items</button>
-<button id="finished-btn">Done</button>
+<div class="container">
+    <div class="row">
+        <div class="column my-30">
+            <div class="row gap-10 justify-content-center">
+                <button id="main-btn">Main Header</button>
+                <button id="sub-btn">Sub Header</button>
+                <button id="grey-btn">Grey Items</button>
+                <button id="blue-btn">Blue Items</button>
+                <button id="finished-btn">Done Button</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
 
         "use strict";
