@@ -42,34 +42,34 @@
 
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        const mainHeader = document.querySelector('#main-btn');
-        const header = document.querySelector('#main-header');
-            mainHeader.addEventListener('click', event => {
-                header.innerHTML = "JavaScript is Cool";
-        });
+        // const mainHeader = document.querySelector('#main-btn');
+        // const header = document.querySelector('#main-header');
+        //     mainHeader.addEventListener('click', event => {
+        //         header.innerHTML = "JavaScript is Cool";
+        // });
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         // mainHeader.innerHTML = "JavaScript is Cool";
 
         // TODO: Uncomment the next line and get the sub header element by id
-        const subHeader = document.querySelector('#sub-header');
-        const subBtn = document.querySelector('#sub-btn');
-            subBtn.addEventListener('click', event => {
-                subHeader.style.color = 'blue';
-        });
+        // const subHeader = document.querySelector('#sub-header');
+        // const subBtn = document.querySelector('#sub-btn');
+        //     subBtn.addEventListener('click', event => {
+        //         subHeader.style.color = 'blue';
+        // });
 
         // TODO: Set the text color of subHeader to blue
         // subHeader.style.color = 'blue';
 
         // TODO: Uncomment the next line and get all list items
-        const listItems = document.querySelectorAll('li');
-        const greyBtn = document.querySelector('#grey-btn');
-            greyBtn.addEventListener('click', event => {
-                listItems.forEach((item, i) => {
-                    if (i % 2 === 1) {
-                        item.style.color = 'grey';
-                    }
-                });
-        });
+        // const listItems = document.querySelectorAll('li');
+        // const greyBtn = document.querySelector('#grey-btn');
+        //     greyBtn.addEventListener('click', event => {
+        //         listItems.forEach((item, i) => {
+        //             if (i % 2 === 1) {
+        //                 item.style.color = 'grey';
+        //             }
+        //         });
+        // });
 
         // TODO: Set text color on every other list item to grey
         //     listItems.forEach((item, i) => {
@@ -79,23 +79,44 @@
         // });
 
         // TODO: Set text color of li with dbid = 1 to blue
-        const li1 = document.querySelector('li');
-        const blueBtn = document.querySelector('#blue-btn');
-            blueBtn.addEventListener('click', event => {
-                li1.style.color = 'blue';
-        });
-        // li1.style.color = 'blue';
+        // const firstList = document.querySelector('li');
+        // const blueBtn = document.querySelector('#blue-btn');
+        //     blueBtn.addEventListener('click', event => {
+        //         firstList.style.color = 'blue';
+        // });
+        // firstList.style.color = 'blue';
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        const subParagraphs = document.querySelector('.sub-paragraph');
-        const finishedBtn = document.querySelector('#finished-btn');
-            finishedBtn.addEventListener('click', event => {
-                subParagraphs.innerText = "Mission Accomplished";
-        });
+        // const subParagraphs = document.querySelector('.sub-paragraph');
+        // const finishedBtn = document.querySelector('#finished-btn');
+        //     finishedBtn.addEventListener('click', event => {
+        //         subParagraphs.innerText = "Mission Accomplished";
+        // });
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         // subParagraphs.innerText = "Mission Accomplished";
+        const colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
 
+        const backgroundbtn = document.querySelector('h1');
+        const body = document.querySelector('body');
+        backgroundbtn.addEventListener('click', event => {
+            body.style.backgroundColor = 'chartreuse';
+        });
+
+        const fontbtn = document.querySelector('p');
+        fontbtn.addEventListener('dblclick', event => {
+            fontbtn.style.fontSize = '18px';
+        });
+
+        const listRed = document.querySelector('ul');
+        listRed.addEventListener("mouseenter", (e) => {
+            listRed.style.color = colors[Math.floor(Math.random() * colors.length)];
+        });
+
+        const listnormal = document.querySelector('ul');
+        listRed.addEventListener("mouseleave", (e) => {
+            listRed.style.color = 'inherit';
+        });
 </script>
 </body>
 </html>
