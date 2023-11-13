@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konami</title>
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div class="page-wrapper align-items-center m-30 p-25">
+        <h1>Konami Code</h1>
+        <section class="container" style="width: 500px; height: 300px; border: 3px solid black">
+            <div class="row align-items-center">
+                <div class="column align-items-center my-20">
+                    <p>You have 3 lives.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>"use strict";
+    document.addEventListener("keyup", event => console.log(event.key));
+    const pressed = [];
+    let konami = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter";
+    window.addEventListener("keyup", (e) => {
+        pressed.push(e.key);
+        pressed.splice(-konami.length - 1, pressed.length - konami.length);
+        if (pressed.join("").includes(konami)) {
+            console.log("Konami code activated!");
+            alert("You added 30 lives!");
+            let lives = document.querySelector('p');
+            lives.innerText = 'You have 30 lives!';
+            let changeBack = document.querySelector('body');
+            changeBack.style.backgroundColor = 'red';
+            let box = document.querySelector('.container');
+            changeBack.style.color = 'chartreuse';
+            box.style.backgroundColor = 'black';
+            window.open('https://www.youtube.com/watch?v=pkDhwG8X07A', '_blank');
+        }
+    });
+    </script>
+</body>
+</html>
