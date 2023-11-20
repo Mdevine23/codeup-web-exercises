@@ -11,7 +11,7 @@ const renderTodoElement = (todo) => {
     deleteBtn.addEventListener("click", (e) => {
         listItem.remove();
     });
-    return listItem;
+    return listItem;co
 };
 const updateTodos = (todos) => {
     document.querySelector("#to-do-list").innerHTML = "";
