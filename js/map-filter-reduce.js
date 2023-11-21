@@ -45,18 +45,29 @@ console.log(userEmail);
 const totalYears = users.reduce((total, user) => {
     return total + user.yearsOfExperience;
 }, 0);
-console.log(totalYears);
+console.log('total years =>', totalYears);
+
+const averageYears = totalYears / users.length;
+console.log('average years =>', averageYears);
 
 const longestEmail = users.reduce((longest, user) => {
     if (user.email.length > longest.length) {
          longest = user.email;
     }
     return longest;
-}, '');
-console.log(longestEmail);
+}, users[0].email);
+console.log('the longest email =>', longestEmail);
 
 const instructors = users.reduce((names, user) => {
-    return names + user.name + ', ';
+    return `${names} ${user.name}, `;
 }, 'Your instructors are: ');
 console.log(instructors);
 
+const uniqueLanguages = users.reduce((languages, user) => {
+    for (let language of user.languages) {
+        languages.add(language);
+    }
+    return languages;
+}, new Set([]));
+    console.log([...uniqueLanguages]);
+    

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/pokemon.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <header class="navbar container-fluid">
+        <div class="row flex-grow-1">
+            <div class="col">
+                <a class="navbar-brand" href="#">
+                    <img src="https://placehold.co/50x50" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Pokemon
+                </a>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <input class="form me-2" type="search" placeholder="PokeDex" aria-label="Search">
+                <button id="searchBtn" class="btn" type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row justify-content-start align-items-center">
+            <div class="col">
+                <img class="pokemon-image" src="https://placehold.co/600x400" alt="Pokemon pic">
+            </div>
+            <div class="col d-flex flex-column justify-content-end">
+                hp: 100
+            </div>
+            <div class="col">
+                <ul>
+                    <li>attack</li>
+                    <li>attack</li>
+                    <li>attack</li>
+                    <li>attack</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                pokemon description
+            </div>
+            <div class="col">
+                evolution chain
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col">
+                reference
+            </div>
+            <div class="col">
+                tm
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script type="module" src="./js/pokemon.js"></script>
+</body>
+</html>
