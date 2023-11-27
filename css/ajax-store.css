@@ -1,0 +1,12 @@
+.container-fluid {
+    border: 2px solid black;
+    margin: 5px 5px;
+}
+
+tbody {
+    border: 4px ridge black;
+    text-transform: capitalize;
+}
+#footer {
+    background-color: black;
+}
