@@ -13,7 +13,7 @@ const getCoordinates = async (searchText) => {
     return data.features[0].center;
 };
 
-const restraunts = [
+const restaurants = [
     {
         name: "Chuys",
         address: "8438 TX-151, San Antonio, TX 78245",
@@ -45,11 +45,11 @@ const restraunts = [
         zoom: 10,
         keyboard: false,
     });
-    for (let restraunt of restraunts) {
+    for (let restaurant of restaurants) {
         const marker = new mapboxgl.Marker()
-            .setLngLat(restraunt.coordinates)
+            .setLngLat(restaurant.coordinates)
             .addTo(map)
-            .setPopup(new mapboxgl.Popup().setHTML(`<p>${restraunt.name}</p><p>${restraunt.address}</p><p>${restraunt.phone}</p><p>I love the food here! Try other locations near you!</p>`));
+            .setPopup(new mapboxgl.Popup().setHTML(`<p>${restaurant.name}</p><p>${restaurant.address}</p><p>${restaurant.phone}</p><p>I love the food here! Try other locations near you!</p>`));
     }
 
 })();
