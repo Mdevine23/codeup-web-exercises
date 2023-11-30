@@ -1,33 +1,54 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css") layer(framework);
 @import url("https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css") layer(mapbox);
 @import url("https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css");
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
 .page-wrapper {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    background-color: #648291;
 }
 .cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px ridge black;
+    border-bottom: 4px ridge black;
     border-radius: 10px;
-}
-#weatherCards {
+    margin: 10px;
     background-color: #e1e0e0;
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
 }
+.slide-right {
+    animation: slide-in-right 5s;
+}
 h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Hedvig Letters Serif", serif;
     text-align: center;
     text-transform: capitalize;
     color: black;
     font-size: 4rem;
     margin: 0 auto;
     padding: 0;
-    background-image: ;
 }
 p {
     margin: unset;
+}
+#header {
+    background-color: #e1e0e0;
+    border-bottom: 4px ridge black;
+    border-radius: 10px;
+    background-image: url(/img/weather.jpeg);
+    background-size: cover;
+}
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }

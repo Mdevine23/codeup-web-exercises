@@ -4,14 +4,14 @@ const renderCard = ({max, min, description, icon, dt}) => {
     const weatherCard = document.createElement('col');
     const date = new Date(dt * 1000);
     const formattedDate = date.toLocaleDateString('en-US', {weekday: 'long'});
-
-       weatherCard.classList.add('col', 'flex-wrap', 'justify-content-center', 'align-items-center', 'd-flex', 'cards');
+       weatherCard.classList.add('col', 'flex-wrap', 'justify-content-center', 'align-items-center', 'd-flex', 'cards', 'slide-right', 'flipped');
         weatherCard.innerHTML = `
                 <h2><b>${formattedDate}</b></h2>
                 <hr>
                 <p><b>high</b> ${max} <b>low</b> ${min}</p>
                 <p><b>desc</b> ${description}</p>
-                <img src="http://openweathermap.org/img/w/${icon}.png" alt="weather icon" width="50px" height="50px">               
+                <img src="http://openweathermap.org/img/w/${icon}.png" alt="weather icon" width="50px" height="50px">
+                <div class="card-back"></div>               
     `;
         return weatherCard;
     }
@@ -27,18 +27,8 @@ const updateCards = async (days) => {
 }
 
 //MAIN
-(async()=>{
+(async()=> {
     const coords = await getCoordinates('San Antonio, TX');
-    const forecast = await getForecast(coords[1], coords[0]);
-    const fiveDayForecast = (forecast.daily.slice(0, 5)).map((day) => {
-        return {
-            max: day.temp.max,
-            min: day.temp.min,
-            description: day.weather[0].description,
-            icon: day.weather[0].icon,
-            dt: day.dt,
-        };
-    });
     const map = createMap('map', coords);
     const geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
@@ -46,7 +36,7 @@ const updateCards = async (days) => {
         marker: false
     });
     map.addControl(geocoder);
-    geocoder.on('result', async function(e) {
+    geocoder.on('result', async function (e) {
         const coords = await getCoordinates(e.result.place_name);
         const forecast = await getForecast(coords[1], coords[0]);
         const fiveDayForecast = (forecast.daily.slice(0, 5)).map((day) => {
@@ -58,8 +48,6 @@ const updateCards = async (days) => {
                 dt: day.dt,
             };
         });
-        const map = createMap('map', coords);
         await updateCards(fiveDayForecast);
     });
-    await updateCards(fiveDayForecast);
 })();
